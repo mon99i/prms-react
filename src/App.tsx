@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Todolist from './Todolist';
 
 /*
   작성자 : 1ch
@@ -8,14 +9,9 @@ import './App.css';
 */
 
 function App() {
-  let name = "리액트";
   return (
     <div className='container'>
-      <h1 className='text'>Hello,
-        {
-          name === "리액트" ? (<h1>YES</h1>) : null
-        }!!</h1>
-
+      <Todolist />
     </div>
   );
 }
